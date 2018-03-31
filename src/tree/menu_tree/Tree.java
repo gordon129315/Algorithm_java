@@ -29,7 +29,6 @@ public class Tree {
         }
         int i = 0;
         for (Node child : node.getChildNodes()) {
-
             preOrderVisit(child, str + (++i) + ".");
         }
     }

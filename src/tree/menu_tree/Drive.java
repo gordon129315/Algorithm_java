@@ -49,6 +49,5 @@ public class Drive {
         panels.addChild(new Node[]{color, picture});
 
         tree.preOrderTraverse();
-
     }
 }
