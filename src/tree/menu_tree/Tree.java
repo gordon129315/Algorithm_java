@@ -27,6 +27,7 @@ public class Tree {
         else {
             System.out.println(str.substring(0, str.length() - 1) + " " + node.getName());
         }
+        
         int i = 0;
         for (Node child : node.getChildNodes()) {
             preOrderVisit(child, str + (++i) + ".");
