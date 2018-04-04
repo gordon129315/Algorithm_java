@@ -62,6 +62,21 @@ public class Tree {
         root.preOrderVisit();
     }
 
-
+    public void nonRecursicePreOrder() {
+        LinkedList<Node> stack = new LinkedList<>();
+        Node node = root;
+        while (node != null || !stack.isEmpty()) {
+            if (node != null) {
+                System.out.println(node.getName());
+                stack.add(node);
+                node = node.getLeft();
+            }
+            else {
+                node = stack.getLast();
+                stack.removeLast();
+                node = node.getRight();
+            }
+        }
+    }
 
 }

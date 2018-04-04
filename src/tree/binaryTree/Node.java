@@ -63,14 +63,6 @@ public class Node {
         return this.getParent() == null;
     }
 
-    public boolean isLeftNode() {
-        return this.getParent().getLeft() == this;
-    }
-
-    public boolean isRightNode() {
-        return this.getParent().getRight() == this;
-    }
-
     public void preOrderVisit() {
         System.out.println(name);
         if (left != null) {
@@ -79,7 +71,5 @@ public class Node {
         if (right != null) {
             right.preOrderVisit();
         }
-
-
     }
 }

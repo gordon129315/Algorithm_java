@@ -45,6 +45,7 @@ public class Drive {
         for (Node node : nodes) {
             System.out.println(node.getName());
         }
+//        tree.nonRecursicePreOrder();
 
     }
 }
