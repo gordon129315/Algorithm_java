@@ -34,6 +34,8 @@ public class Driver {
         System.out.println("");
 
         graph.bfs("1");
+        System.out.println();
+        graph.dfs("1");
 
 
     }
