@@ -57,7 +57,7 @@ public class Graph {
             for (Node adjNode : node.nodes) {
                 if (adjNode.mark == Node.markNotVisited) {
                     waiting.addLast(adjNode);
-                    adjNode.mark = Node.markVisited;
+                    adjNode.mark = Node.markWaiting;
                     adjNode.from = node;
                 }
             }
